@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5ced42f690c1590dfb174996c4eacd103b76c4c23a285c43e4a5206937c1fa99
 
 build:
-  number: 6
+  number: 7
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
